@@ -1,7 +1,8 @@
 const Navbar = () => {
     return (
         <div className="navbar">
-            <a href="/">Home</a>
+            <a className="homeButton" href="/">Mini blog</a>
+            <a className="newBlogButton" href="/create">New blog</a>
         </div>
     );
 }
