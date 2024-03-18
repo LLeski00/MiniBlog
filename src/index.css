@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
+/*General style*/
+
 body {
   font-family: "Madimi One", sans-serif;
   background-color: rgb(219, 219, 219);
@@ -7,7 +9,9 @@ body {
   font-style: normal;
 }
 
-.navbar {
+/*Navigation bar style*/
+
+.navbarContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +43,26 @@ body {
   transform: scale(1.1);
 }
 
+/*Main home page content style*/
+
 .home h1 {
   text-align: center;
+}
+
+.blog {
+  margin: auto;
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  background-color: rgb(233, 233, 233);
+  box-shadow:dimgray 5px 5px 5px;
+  border-radius: 15px;
+}
+
+.blog:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
