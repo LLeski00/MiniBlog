@@ -77,3 +77,9 @@ body {
   text-align: center;
   font-size:xx-large;
 }
+
+/*Create page style*/
+
+.create-content h1 {
+  text-align: center;
+}
