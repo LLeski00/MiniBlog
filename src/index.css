@@ -72,3 +72,20 @@ body {
   text-align: end;
   padding-right: 15px;
 }
+
+.blog-delete-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-delete-button {
+  border-radius: 15px;
+  font-size: medium;
+  background-color: rgb(172, 36, 36);
+}
+
+.blog-delete-button:hover {
+  cursor: pointer;
+  background-color: rgb(153, 35, 35);
+}
