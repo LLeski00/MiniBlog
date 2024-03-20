@@ -89,3 +89,8 @@ body {
   cursor: pointer;
   background-color: rgb(153, 35, 35);
 }
+
+.blog-loading {
+  text-align: center;
+  font-size:xx-large;
+}
