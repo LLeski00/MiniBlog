@@ -66,3 +66,9 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.blog p {
+  width: 100%;
+  text-align: end;
+  padding-right: 15px;
+}
