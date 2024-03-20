@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
         <div className="navbar">
-            <div className="navbarContent">
-                <a className="homeButton" href="/">Mini blog</a>
-                <a className="newBlogButton" href="/create">New blog</a>
+            <div className="navbar-content">
+                <a className="home-button" href="/">Mini blog</a>
+                <a className="new-blog-button" href="/create">New blog</a>
             </div>
         </div>
     );

@@ -11,8 +11,8 @@ const Home = () => {
 
     return (
         <div className="home">
-            <div className="homeContent">
-                <BlogList blogs={blogs}/>
+            <div className="home-content">
+                <BlogList blogs={blogs} title="All blogs:"/>
             </div>
         </div>
     );

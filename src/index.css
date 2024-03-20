@@ -11,7 +11,7 @@ body {
 
 /*Navigation bar style*/
 
-.navbarContent {
+.navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,11 +23,11 @@ body {
   font-size: 25px;
 }
 
-.homeButton {
+.home-button {
   padding: 15px;
 }
 
-.newBlogButton {
+.new-blog-button {
   text-align: center;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ body {
   transition: transform 0.2s;
 }
 
-.newBlogButton:hover {
+.new-blog-button:hover {
   cursor: pointer;
   background-color: rgb(58, 156, 236);
   transform: scale(1.1);
