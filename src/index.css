@@ -135,6 +135,11 @@ body {
   text-align: center;
 }
 
+.blog-details-data {
+  display:flex;
+  flex-direction: column;
+}
+
 .blog-details-body {
   padding: 10px 70px;
   font-size: 20px;
@@ -145,5 +150,29 @@ body {
 }
 
 .blog-details-title {
+  text-align: center;
+}
+
+.blog-details-data button {
+  width: 20%;
+  height: 40px;
+  margin:auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(177, 0, 0);
+  font-family: "Madimi One", sans-serif;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.blog-details-data button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(155, 0, 0);
+}
+
+/*Not found page style*/
+
+.not-found-content {
   text-align: center;
 }
