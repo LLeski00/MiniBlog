@@ -92,3 +92,13 @@ body {
 .blog-details-content h1 {
   text-align: center;
 }
+
+.blog-details-body {
+  padding: 10px 70px;
+  font-size: 20px;
+}
+
+.blog-details-author {
+  text-align: end;
+  padding-right: 20px;
+}
