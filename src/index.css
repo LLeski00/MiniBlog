@@ -141,6 +141,9 @@ body {
 }
 
 .blog-details-author {
-  text-align: end;
-  padding-right: 20px;
+  text-align: center;
+}
+
+.blog-details-title {
+  text-align: center;
 }

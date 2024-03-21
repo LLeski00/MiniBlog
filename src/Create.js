@@ -1,16 +1,31 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
 
     const [title,setTitle] = useState("");
     const [body,setBody] = useState("");
     const [author,setAuthor] = useState("");
+    const [isLoading,setIsLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleBlogSubmit = (e) => {
         e.preventDefault();
-        const preview = body.slice(0,20)+"...";
+        const preview = body.slice(0,30)+"...";
         const blogContent = {title,preview,body,author};
-        console.log(blogContent);
+
+        setIsLoading(true);
+
+        fetch("http://localhost:8000/blogs",{
+            method:'POST',
+            headers:{"Content-Type" : "application/json"},
+            body:JSON.stringify(blogContent)
+        })
+        .then(()=>{
+            setIsLoading(false);
+        })
+
+        navigate("/");
     }
 
     return (
@@ -36,7 +51,8 @@ const Create = () => {
                         required 
                         value={author}
                         onChange={(e)=>setAuthor(e.target.value)}/>
-                    <button>Add blog</button>
+                    {!isLoading && <button>Add blog</button>}
+                    {isLoading && <button disabled>Adding...</button>}
                 </form>
             </div>
         </div>
