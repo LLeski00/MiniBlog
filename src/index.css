@@ -87,6 +87,48 @@ body {
   text-align: center;
 }
 
+.create-content form {
+  margin:auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.create-content label {
+  margin-top:5px;
+  margin-left: 10px;
+}
+
+.create-content input,textarea {
+  margin:10px;
+  font-family: "Madimi One", sans-serif;
+}
+
+.create-content textarea {
+  height:150px;
+}
+
+
+.create-content button {
+  width: 20%;
+  height: 40px;
+  margin:auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(59, 167, 255);
+  font-family: "Madimi One", sans-serif;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.create-content button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(58, 156, 236);
+}
+
+
 /*Blog details page style*/
 
 .blog-details-content h1 {
