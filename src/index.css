@@ -20,11 +20,11 @@ body {
 .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
 }
 
 .home-button {
   padding: 15px;
+  font-size: 30px;
 }
 
 .new-blog-button {
@@ -35,6 +35,7 @@ body {
   background-color:rgb(59, 167, 255);
   border-radius: 8px;
   transition: transform 0.2s;
+  font-size: 25px;
 }
 
 .new-blog-button:hover {
@@ -49,7 +50,7 @@ body {
   text-align: center;
 }
 
-.blog {
+.blog a{
   margin: auto;
   margin-top: 30px;
   width: 50%;
@@ -60,9 +61,11 @@ body {
   background-color: rgb(233, 233, 233);
   box-shadow:dimgray 5px 5px 5px;
   border-radius: 15px;
+  text-decoration: none;
+  color: black;
 }
 
-.blog:hover {
+.blog a:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -73,7 +76,7 @@ body {
   padding-right: 15px;
 }
 
-.blog-loading {
+.blog-loading, .blog-error {
   text-align: center;
   font-size:xx-large;
 }
@@ -81,5 +84,11 @@ body {
 /*Create page style*/
 
 .create-content h1 {
+  text-align: center;
+}
+
+/*Blog details page style*/
+
+.blog-details-content h1 {
   text-align: center;
 }
